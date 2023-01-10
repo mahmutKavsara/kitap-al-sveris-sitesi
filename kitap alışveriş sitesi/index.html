@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a id="baslik" class="navbar-brand" href="index2.html" target="sayfalar">BookShop</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="kitaplar.html" target="sayfalar">Kitaplar</a></li>
+        <li><a href="sesliKitaplar.html" target="sayfalar">Sesli Kitaplar</a></li>
+        <li><a href="hediyeler.html" target="sayfalar">Hediyeler</a></li>
+        <li><a href="hakkımızda.html" target="sayfalar">Hakkımızda</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span id="form-acma-button" class="glyphicon ">  <button style="background-color: #48434300; border-style: none;" type="button" class="glyphicon-user" data-toggle="modal" data-target="#myModal">
+          Giriş Yap
+        </button></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Sepet</a></li>
+        <li style=" margin-top: 6px;"><span  style=" margin-top: 20px; color: rgb(109, 109, 109);"><h4 id="spt">0</h4></span></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<IFRAME src="index2.html" name="sayfalar" width="100%" height="100%" scrolling="no" frameborder="0" ></IFRAME>
+
+<div class="container">
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Giriş Ekranı</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+        
+        
+            <!-- Login Form -->
+            <form>
+              <input type="text" id="login" class="fadeIn second" name="login" placeholder="Kullanıcı Adı">
+              <input type="text" id="password" class="fadeIn third" name="login" placeholder="Şifre">
+              <input type="submit" class="fadeIn fourth" value="Giriş Yap">
+            </form>
+        
+        
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
